@@ -1,5 +1,19 @@
 # <img src="assets/icon.png" width="40" height="40"> Colored debug 🎨
 
+<p align="left">
+  <a href="https://marketplace.visualstudio.com/items?itemName=wexelsdev.colored-debug">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/wexelsdev.colored-debug?style=for-the-badge&label=Marketplace&logo=visual-studio-code&color=0078d7" alt="VS Marketplace Version">
+  </a>
+
+  <a href="https://open-vsx.org/extension/wexelsdev/colored-debug">
+    <img src="https://img.shields.io/open-vsx/v/wexelsdev/colored-debug?style=for-the-badge&label=Open%20VSX&logo=visual-studio-code&logoColor=white&color=purple" alt="Open VSX Version">
+  </a>
+
+  <a href="https://github.com/USER/REPO/releases">
+    <img src="https://img.shields.io/github/v/release/wexelsdev/Colored-debug?style=for-the-badge&label=GitHub%20VSIX&logo=github&color=orange" alt="GitHub Release Version">
+  </a>
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 **Colored debug** is a lightweight VS Code extension that repairs broken ANSI color sequences in the Debug Console. 
