@@ -1,71 +1,35 @@
-# debug-color-fixer README
+# <img src="assets/icon.png" width="40" height="40"> Colored debug 🎨
 
-This is the README for your extension "debug-color-fixer". After writing up a brief description, we recommend including the following sections.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## Features
+**Colored debug** is a lightweight VS Code extension that repairs broken ANSI color sequences in the Debug Console. 
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+If your debugger outputs raw escape codes like `e[90m` or `\e[32m` instead of colored text, this extension will intercept and fix them on the fly.
 
-For example if there is an image subfolder under your extension project workspace:
+## 🚀 Features
+- **Automatic Repair:** Converts literal `e[` or `\e[` sequences into real ANSI Escape characters.
+- **Zero Configuration:** Works out of the box for all debuggers (Node.js, Python, C++, Go, etc.).
+- **Performance:** Minimal footprint; only processes active debug output strings.
+- **Universal:** Compatible with official VS Code, VSCodium, and custom forks.
 
-\!\[feature X\]\(images/feature-x.png\)
+## 📸 How it works
+| Before | After |
+| :--- | :--- |
+| ![Before](https://github.com/wexelsdev/Colored-debug/blob/main/assets/before.png?raw=true) | ![After](https://github.com/wexelsdev/Colored-debug/blob/main/assets/after.png?raw=true) |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## 📦 Installation
+1. Open VS Code / VSCodium.
+2. Go to **Extensions**.
+3. Search for `Colored debug`.
+4. Click **Install**.
 
-## Requirements
+## 🛠 Manual Installation
+If you prefer to install the `.vsix` manually:
+1. Download the latest `.vsix` from the [Releases](https://github.com/wexelsdev/Colored-debug/releases) page.
+2. In VS Code, run the command `Extensions: Install from VSIX...`.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+## 🤝 Contributing
+Issues and pull requests are welcome! If you encounter a specific escape sequence that isn't being caught, please open an issue with the raw log output.
 
 ---
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Created with ❤️ for the developer community.
