@@ -3,10 +3,14 @@
   "displayName": "Colored debug",
   "publisher": "wexelsdev",
   "description": "Simple VS Code extension that fixes ANSI colors in the debug console",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wexelsdev/Colored-debug.git"
+  },
   "icon": "assets/icon.png",
   "engines": {
-    "vscode": "^1.107.0"
+    "vscode": "^1.74.0"
   },
   "categories": [
     "Other"
@@ -24,7 +28,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.107.0",
+    "@types/vscode": "^1.74.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
     "typescript-eslint": "^8.48.1",
